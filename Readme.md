@@ -13,7 +13,7 @@ $ cd justatest
 
 - Then clone the patchset in `.git/patches`
 ```sh
-$ git clone https://github.com/gthvn1/justatest.pq.git
+$ git clone https://github.com/gthvn1/justatest.pq.git .git/patches
 ```
 
 - Create the status file. We don't keep this file because we want to start with clean status.
