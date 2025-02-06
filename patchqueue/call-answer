@@ -1,0 +1,11 @@
+diff --git a/src/main.zig b/src/main.zig
+index 9ac983d..aa4148d 100644
+--- a/src/main.zig
++++ b/src/main.zig
+@@ -6,5 +6,5 @@ fn answer() usize {
+ 
+ pub fn main() !void {
+     // Prints to stderr (it's a shortcut based on `std.io.getStdErr()`)
+-    std.debug.print("Hello, Sailor!\n", .{});
++    std.debug.print("Hello, Sailor! {d}\n", .{answer()});
+ }

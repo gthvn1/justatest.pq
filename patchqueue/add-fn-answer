@@ -1,0 +1,14 @@
+diff --git a/src/main.zig b/src/main.zig
+index 5603568..9ac983d 100644
+--- a/src/main.zig
++++ b/src/main.zig
+@@ -1,5 +1,9 @@
+ const std = @import("std");
+ 
++fn answer() usize {
++    return 42;
++}
++
+ pub fn main() !void {
+     // Prints to stderr (it's a shortcut based on `std.io.getStdErr()`)
+     std.debug.print("Hello, Sailor!\n", .{});
