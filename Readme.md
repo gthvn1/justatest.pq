@@ -16,7 +16,7 @@ $ cd justatest
 $ git clone https://github.com/gthvn1/justatest.pq.git
 ```
 
-- Create the status file
+- Create the status file. We don't keep this file because we want to start with clean status.
 ```sh
 $ touch .git/patches/patchqueue/status
 ```
