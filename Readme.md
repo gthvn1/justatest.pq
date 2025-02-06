@@ -1,6 +1,7 @@
 # Intro
 
 - This is the repo to keep track of guilt patchqueue of [justatest](https://github.com/gthvn1/justatest)
+- Currently it is based on master
 
 # Setup
 
@@ -9,7 +10,19 @@
 $ git clone https://github.com/gthvn1/justatest.git
 $ cd justatest
 ```
+
 - Then clone the patchset in `.git/patches`
 ```sh
 $ git clone https://github.com/gthvn1/justatest.pq.git
+```
+
+- Create the status file
+```sh
+$ touch .git/patches/patchqueue/status
+```
+
+- Switch to the patchqueue branch and you are ready to apply the patches by doing:
+```sh
+$ git switch -c patchqueue
+$ guilt push -a
 ```
